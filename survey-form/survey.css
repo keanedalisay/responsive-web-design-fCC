@@ -1,0 +1,6 @@
+body{
+    margin:none;
+    width: 100vw;
+    height: 100vh;           /* Background of webpage. */
+    background: linear-gradient(172deg, #f4cc28 15%,white 15.2% 84.8%,#040494 85%); 
+}
