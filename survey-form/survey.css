@@ -1,6 +1,60 @@
 body{
-    margin:none;
-    width: 100vw;
-    height: 100vh;           /* Background of webpage. */
+    margin: none;    
+    height: 100vh; 
     background: linear-gradient(172deg, #f4cc28 15%,white 15.2% 84.8%,#040494 85%); 
+    font-family: "Roboto Serif","Times New Roman", serif;
+    font-size: 13px;
+}
+
+/* Parent div that holds ALL elements. */
+
+.container{ 
+    margin: 60px auto;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+/* Child div that holds elements for the header. */
+
+.header{
+    width: 100%;
+    text-align: center;
+    
+}
+#header-logo{
+    width: 50px;
+    vertical-align: -25%;
+    display: inline-block;
+    
+}
+#title{
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+/* Child form that holds elements for the survey. */
+
+#survey-form{
+    width: 100%;
+    text-align: center;
+    border: 1px solid black;
+}
+label{
+    display: inline-block;
+}
+input{
+    margin: 7px 2px;
+    width: 65px;
+    height: 15px;
+    border: none;
+    border-bottom: 1.99px solid #cccccc; 
+    font-family: "Roboto Serif","Times New Roman", serif;
+}
+input[type ="email"]{
+    width: 230px;
+}
+input:focus{
+    outline: none;
+    border-bottom: 1.99px solid #040494;
 }
