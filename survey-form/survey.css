@@ -3,15 +3,17 @@ body{
     height: 100vh; 
     background: linear-gradient(172deg, #f4cc28 15%,white 15.2% 84.8%,#040494 85%); 
     font-family: "Roboto Serif","Times New Roman", serif;
-    font-size: 13px;
+    font-size: 12px;
 }
 
 /* Parent div that holds ALL elements. */
 
 .container{ 
     margin: 60px auto;
-    min-width: 300px;
+    min-width: 275px;
     max-width: 350px;
+    border: 1px solid black;
+    background: white;
 }
 
 /* Child div that holds elements for the header. */
@@ -22,7 +24,7 @@ body{
     
 }
 #header-logo{
-    width: 50px;
+    width: 42px;
     vertical-align: -25%;
     display: inline-block;
     
@@ -30,7 +32,7 @@ body{
 #title{
     margin-left: 5px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 17.5px;
 }
 
 /* Child form that holds elements for the survey. */
@@ -38,23 +40,40 @@ body{
 #survey-form{
     width: 100%;
     text-align: center;
-    border: 1px solid black;
 }
 label{
+    margin: 8.5px 0px;
     display: inline-block;
 }
-input{
-    margin: 7px 2px;
-    width: 65px;
-    height: 15px;
-    border: none;
-    border-bottom: 1.99px solid #cccccc; 
-    font-family: "Roboto Serif","Times New Roman", serif;
-}
-input[type ="email"]{
-    width: 230px;
+input:invalid{
+    background-color: rgb(128,0,0,0.09);
+    border-bottom: 1.99px solid rgb(128,0,0);
 }
 input:focus{
-    outline: none;
+    background-color: #04049411;
     border-bottom: 1.99px solid #040494;
 }
+input{
+    margin: 0px 2px;
+    height: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1.99px solid #cccccc;
+    vertical-align: middle;
+    font-family: "Roboto Serif","Times New Roman", serif;
+    font-size: 12px;
+}
+input[type= "text"]{
+    width: 150px;
+}
+input[type= "email"]{
+    width: 180px;
+}
+input[name= "birthdate"]{
+    width: 100px;
+}
+input[inputmode= "number"]{
+    width: 20px;
+}
+
+

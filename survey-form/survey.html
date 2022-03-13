@@ -22,9 +22,11 @@
                     <p id= "description"> To apply, please fill out this form with certified information. </p>
 
                     <fieldset>
-                        <label> Last Name: <input pattern= "[A-Za-z] {3, 30}" id= "lname" name= "lname" title= "Your last name goes here." type= "text" placeholder= "Serif" required> </label>
-                        <label> First Name: <input pattern= "[A-Za-z] {3, 50}" id= "name" name="fname" title= "Your first name goes here." type= "text" placeholder= "Samuel S." required> </label>
-                        <label> Email: <input patern= "[a-z.] {3, 50}" id= "email" name= "email" title= "Make sure the email you choose is actively used." type= "email" placeholder= "youremail@address.com" required> </label>
+                        <label> Last Name: <input pattern= "[A-Za-z]{3, 30}" id= "lname" name= "lname" title= "Every word should begin in Uppercase." type= "text" placeholder= "Serif" required> </label>
+                        <label> First Name: <input pattern= "[A-Za-z]{3, 50}" id= "name" name="fname" title= "Every word should begin in Uppercase." type= "text" placeholder= "Samuel S." required> </label>
+                        <label> Email: <input pattern= "[a-z0-9]+@[a-z0-9]+\.[a-z]{3,}" id= "email" name= "email" title= "The email you type in should be valid." type= "email" placeholder= "youremail@address.com" required> </label>
+                        <label> Birthdate: <input pattern= "[0-9]{3,50}" id= "birthdate" name= "birthdate" title= "Type in your birthdate." type= "text" placeholder= "January 1, 2000" required></label>
+                        <label> Age: <input pattern= "[0-9]{2}" id= "number" name= "age" title= "The age you type in must correspond with your real age." inputmode= "number" min="10" max= "99"required></label>
                     </fieldset>
 
                     <fieldset>
