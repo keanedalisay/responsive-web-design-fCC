@@ -27,12 +27,15 @@ body{
     width: 42px;
     vertical-align: -25%;
     display: inline-block;
-    
+}
+#header-logo:hover{
+    opacity: 85%;
 }
 #title{
     margin-left: 5px;
     display: inline-block;
     font-size: 17.5px;
+    color: #111111;
 }
 
 /* Child form that holds elements for the survey. */
@@ -45,12 +48,15 @@ label{
     margin: 8.5px 0px;
     display: inline-block;
 }
-input:invalid{
+
+/* First fieldset that holds demographic related inputs */
+
+input:invalid{ 
     background-color: rgb(128,0,0,0.09);
     border-bottom: 1.99px solid rgb(128,0,0);
 }
 input:focus{
-    background-color: #04049411;
+    background-color: #f4cc2821;
     border-bottom: 1.99px solid #040494;
 }
 input{
@@ -66,14 +72,39 @@ input{
 input[type= "text"]{
     width: 150px;
 }
-input[type= "email"]{
-    width: 180px;
-}
 input[name= "birthdate"]{
     width: 100px;
 }
 input[inputmode= "number"]{
     width: 20px;
 }
+input[type= "email"]{
+    width: 180px;
+}
+
+/* Second fieldset that holds users desired grade level */
+
+.field__label--margin{
+    margin: 8.5px 7px;
+}
+input[type= "radio"]{
+    margin: 0px 3px;
+    vertical-align: -20%;
+}
+select{
+    margin: 8.5px 0px;
+    height: 20px;
+    text-align: center;
+    outline: none;
+    border: none;
+    border-bottom: 1.99px solid #cccccc;
+    font-family: "Roboto Serif", 'Times New Roman', serif;
+    font-size: 12px;
+}
+select:focus{
+    background-color: #f4cc2821;
+    border-bottom: 1.99px solid #040494;
+}
+
 
 

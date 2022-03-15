@@ -14,23 +14,38 @@
             <div class= "container">
 
                 <div class= "header">
-                    <img id= "header-logo" src= "ISAT-U.png" alt= "">
-                    <h1 id= "title"> Iloilo Science and <br> Technology University </h1>
+                    <a href= "https://www.isatu.edu.ph/" title= "ISAT-U"><img id= "header-logo" src= "ISAT-U.png" alt= ""></a>
+                    <a href= "https://www.isatu.edu.ph/" title= "Interested on how this is coded?"><h1 id= "title"> Iloilo Science and <br> Technology University </h1></a>
                 </div>
 
                 <form id= "survey-form">
-                    <p id= "description"> To apply, please fill out this form with certified information. </p>
+                    <p id= "description"> To apply, please fill out this form with <br> certified information. </p>
 
                     <fieldset>
-                        <label> Last Name: <input pattern= "[A-Za-z]{3, 30}" id= "lname" name= "lname" title= "Every word should begin in Uppercase." type= "text" placeholder= "Serif" required> </label>
-                        <label> First Name: <input pattern= "[A-Za-z]{3, 50}" id= "name" name="fname" title= "Every word should begin in Uppercase." type= "text" placeholder= "Samuel S." required> </label>
-                        <label> Email: <input pattern= "[a-z0-9]+@[a-z0-9]+\.[a-z]{3,}" id= "email" name= "email" title= "The email you type in should be valid." type= "email" placeholder= "youremail@address.com" required> </label>
-                        <label> Birthdate: <input pattern= "[0-9]{3,50}" id= "birthdate" name= "birthdate" title= "Type in your birthdate." type= "text" placeholder= "January 1, 2000" required></label>
-                        <label> Age: <input pattern= "[0-9]{2}" id= "number" name= "age" title= "The age you type in must correspond with your real age." inputmode= "number" min="10" max= "99"required></label>
+                        <label> Last Name: <input pattern= "[A-Za-z,/.- ]{3,50}" id= "name-last" name= "lname" title= "Type in your last name e.g. Serif." type= "text" placeholder= "Serif" required></label>
+                        <label> First Name: <input pattern= "[A-Za-z,/.- ]{3,80}" id= "name-first" name="fname" title= "Type in your first name with middle initial e.g. Samuel S." type= "text" placeholder= "Samuel S." required></label>
+                        <br>
+                        <label> Birthdate: <input pattern= "[A-Za-z ]+[0-9, ]+[0-9 ]{3,50}" id= "birthdate" name= "birthdate" title= "Type in your real birthdate." type= "text" placeholder= "January 1, 2000" required></label>
+                        <label> Age: <input pattern= "[0-9]{2}" id= "number-age" name= "age" title= "The age you type in must correspond with your real age." inputmode= "number" min="10" max= "99" placeholder= "13" required></label>
+                        <br>
+                        <label> Email: <input pattern= "[a-z0-9,/.-]+@[a-z0-9,/.-]+\.[a-z]{3,}" id= "email-valid" name= "email" title= "The email you type in should be valid." type= "email" placeholder= "youremail@address.com" required></label>
                     </fieldset>
-
+                        
                     <fieldset>
-
+                        <label> Sex at Birth: </label>
+                        <label class= "field__label--margin"><input name= "sex" type= "radio"> Male </label>
+                        <label class= "field__label--margin"><input name= "sex" type= "radio"> Female </label>
+                        <br>
+                        <label> Desired Grade Level of Choice: </label>
+                        <select id= "dropdown" title= "Make sure to select the right grade level." required>
+                            <option> --- Select Grade Level --- </option>
+                            <option> Grade 7 </option>
+                            <option> Grade 8 </option>
+                            <option> Grade 9 </option>
+                            <option> Grade 10 </option>
+                            <option> Grade 11 </option>
+                            <option> Grade 12 </option>
+                        </select>
                     </fieldset>
 
                 </form>
