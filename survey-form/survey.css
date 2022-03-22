@@ -1,16 +1,16 @@
-body{
+body{ 
     margin: 0px;    
-    background: linear-gradient(90deg, #f4cc28 15%,white 15.1% 84.9%,#040494 85%); 
+    background: linear-gradient(90deg, #f4cc28 50%, #040494 50.1% 100%); 
     font-family: "Roboto Serif","Times New Roman", serif;
-    font-size: 12px;
+    font-size: 11.5px;
 }
 
 /* Parent div that holds ALL elements. */
 
 .container{ 
-    margin: 30px auto;
-    width: 275px;
-    border: 1px solid black;
+    margin: 45px auto;
+    padding: 10px;
+    width: 260px;
     background: white;
 }
 
@@ -19,13 +19,12 @@ body{
 .header{
     width: 100%;
     text-align: center;
-    
 }
 #header-logo:hover{
     opacity: 85%;
 }
 #header-logo{
-    width: 42px;
+    width: 40px;
     vertical-align: -25%;
     display: inline-block;
 }
@@ -33,7 +32,7 @@ body{
     margin-left: 5px;
     display: inline-block;
     color: #111111;
-    font-size: 17.5px;
+    font-size: 16px;
 }
 
 /* Child form that holds elements for the survey. */
@@ -45,6 +44,15 @@ body{
 label{
     margin: 8.5px 0px;
     display: inline-block;
+}
+fieldset{
+    border: none;
+}
+hr{
+    width: 250px;
+    height: 2px;
+    background: linear-gradient(160deg, #f4cc28 50%, #040494 50.1% 100%);
+    border: none;
 }
 
 /* First fieldset that holds demographic related inputs */
@@ -59,31 +67,32 @@ input:focus{
 }
 input{
     margin: 0px 2px;
+    padding: 2px 3px;
     height: 15px;
     vertical-align: middle;
     outline: none;
     border: none;
     border-bottom: 1.99px solid #cccccc;
     font-family: "Roboto Serif","Times New Roman", serif;
-    font-size: 12px;
+    font-size: 11.5px;
 }
 input[type= "text"]{
-    width: 150px;
+    width: 145px;
 }
 input[name= "birthdate"]{
-    width: 100px;
+    width: 95px;
 }
 input[inputmode= "number"]{
     width: 20px;
 }
 input[type= "email"]{
-    width: 180px;
+    width: 178px;
 }
 
 /* Second fieldset that holds users desired grade level */
 
 input[name= "contact-number"]{
-    width: 128px;
+    width: 126px;
 }
 
 .field__label--margin{
@@ -110,13 +119,14 @@ select:focus{
 }
 select{
     margin: 8.5px 0px;
-    height: 20px;
+    width: 175px;
+    height: 22px;
     text-align: center;
     outline: none;
     border: none;
     border-bottom: 1.99px solid #cccccc;
     font-family: "Roboto Serif", 'Times New Roman', serif;
-    font-size: 12px;
+    font-size: 11.5px;
 }
 
 /* Third fieldset that holds the authorization of collecting confidential data */
@@ -134,10 +144,10 @@ textarea{
     outline: none;
     border: 1.99px solid #cccccc;
     font-family: "Roboto Serif", 'Times New Roman', serif;
-    font-size: 12px;
+    font-size: 11.5px;
 }
 .field__label--text-align{
-    margin: 8.5px 13.2px;
+    margin: 8.5px 7px;
     text-align: justify;
 }
 input[type= "checkbox"]:hover{
@@ -158,15 +168,20 @@ button[type= "submit"]:hover{
     cursor: pointer;
     background: linear-gradient(160deg, #f4cc2855 50%, #04049455 50.2% 100%);
 }
+button[type= "submit"]:active{
+    cursor: pointer;
+    background: linear-gradient(160deg, #f4cc2855 50%, #04049455 50.2% 100%);
+}
 button[type= "submit"]{
-    margin: 8.5px 0px;
+    margin: 8.5px auto;
     width: 120px;
     height: 25px;
+    vertical-align: center;
     border-radius: 3%;
     border: none;
     background-color: #cccccc;
     font-family: "Roboto Serif", 'Times New Roman', serif;
-    font-size: 12px;
+    font-size: 13px;
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
     
