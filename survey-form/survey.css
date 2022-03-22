@@ -1,7 +1,6 @@
 body{
-    margin: none;    
-    height: 100vh; 
-    background: linear-gradient(172deg, #f4cc28 15%,white 15.2% 84.8%,#040494 85%); 
+    margin: 0px;    
+    background: linear-gradient(90deg, #f4cc28 15%,white 15.1% 84.9%,#040494 85%); 
     font-family: "Roboto Serif","Times New Roman", serif;
     font-size: 12px;
 }
@@ -9,9 +8,8 @@ body{
 /* Parent div that holds ALL elements. */
 
 .container{ 
-    margin: 60px auto;
-    min-width: 275px;
-    max-width: 350px;
+    margin: 30px auto;
+    width: 275px;
     border: 1px solid black;
     background: white;
 }
@@ -23,19 +21,19 @@ body{
     text-align: center;
     
 }
+#header-logo:hover{
+    opacity: 85%;
+}
 #header-logo{
     width: 42px;
     vertical-align: -25%;
     display: inline-block;
 }
-#header-logo:hover{
-    opacity: 85%;
-}
 #title{
     margin-left: 5px;
     display: inline-block;
-    font-size: 17.5px;
     color: #111111;
+    font-size: 17.5px;
 }
 
 /* Child form that holds elements for the survey. */
@@ -62,10 +60,10 @@ input:focus{
 input{
     margin: 0px 2px;
     height: 15px;
+    vertical-align: middle;
     outline: none;
     border: none;
     border-bottom: 1.99px solid #cccccc;
-    vertical-align: middle;
     font-family: "Roboto Serif","Times New Roman", serif;
     font-size: 12px;
 }
@@ -84,12 +82,31 @@ input[type= "email"]{
 
 /* Second fieldset that holds users desired grade level */
 
+input[name= "contact-number"]{
+    width: 128px;
+}
+
 .field__label--margin{
-    margin: 8.5px 7px;
+    margin: 8.5px 8px;
+}
+input[type= "radio"]:hover{
+    cursor:pointer;
+}
+input[type= "radio"]:focus{
+    outline: 2px solid #111111;
 }
 input[type= "radio"]{
     margin: 0px 3px;
+    accent-color: #040494;
     vertical-align: -20%;
+}
+select:invalid{
+    background-color: rgb(128,0,0,0.09);
+    border-bottom: 1.99px solid rgb(128,0,0);
+}
+select:focus{
+    background-color: #f4cc2821;
+    border-bottom: 1.99px solid #040494;
 }
 select{
     margin: 8.5px 0px;
@@ -101,10 +118,58 @@ select{
     font-family: "Roboto Serif", 'Times New Roman', serif;
     font-size: 12px;
 }
-select:focus{
+
+/* Third fieldset that holds the authorization of collecting confidential data */
+
+textarea:focus{
     background-color: #f4cc2821;
-    border-bottom: 1.99px solid #040494;
+    border: 1.99px solid #040494;
+}
+textarea{
+    padding: 10px 10px;
+    min-width: 200px;
+    min-height: 65px;
+    resize: vertical;
+    text-align: justify;
+    outline: none;
+    border: 1.99px solid #cccccc;
+    font-family: "Roboto Serif", 'Times New Roman', serif;
+    font-size: 12px;
+}
+.field__label--text-align{
+    margin: 8.5px 13.2px;
+    text-align: justify;
+}
+input[type= "checkbox"]:hover{
+    cursor: pointer;
+}
+input[type= "checkbox"]:focus{
+    outline: 2px solid #111111;
+}
+input[type= "checkbox"]{
+    margin: 0px 3px;
+    accent-color: #040494;
+    vertical-align: -20%;
 }
 
+/* Button to submit data */
+
+button[type= "submit"]:hover{
+    cursor: pointer;
+    background: linear-gradient(160deg, #f4cc2855 50%, #04049455 50.2% 100%);
+}
+button[type= "submit"]{
+    margin: 8.5px 0px;
+    width: 120px;
+    height: 25px;
+    border-radius: 3%;
+    border: none;
+    background-color: #cccccc;
+    font-family: "Roboto Serif", 'Times New Roman', serif;
+    font-size: 12px;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    
+}
 
 
