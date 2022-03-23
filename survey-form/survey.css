@@ -1,20 +1,20 @@
-body{ 
+body{ /* ----- Webpage is designed to prioritize mobile-first. ----- */
     margin: 0px;    
     background: linear-gradient(90deg, #f4cc28 50%, #040494 50.1% 100%); 
     font-family: "Roboto Serif","Times New Roman", serif;
     font-size: 11.5px;
 }
 
-/* Parent div that holds ALL elements. */
+/* ----- Parent div that holds ALL elements. ----- */
 
 .container{ 
     margin: 45px auto;
     padding: 10px;
-    width: 260px;
+    width: 250px;
     background: white;
 }
 
-/* Child div that holds elements for the header. */
+/* ----- Child div that holds elements for the header. ----- */
 
 .header{
     width: 100%;
@@ -35,7 +35,7 @@ body{
     font-size: 16px;
 }
 
-/* Child form that holds elements for the survey. */
+/* ----- Child form that holds elements for the survey. ----- */
 
 #survey-form{
     width: 100%;
@@ -49,13 +49,13 @@ fieldset{
     border: none;
 }
 hr{
-    width: 250px;
+    width: 240px;
     height: 2px;
     background: linear-gradient(160deg, #f4cc28 50%, #040494 50.1% 100%);
     border: none;
 }
 
-/* First fieldset that holds demographic related inputs */
+/* ----- First fieldset that holds demographic related inputs. ----- */
 
 input:invalid{ 
     background-color: rgb(128,0,0,0.09);
@@ -89,17 +89,16 @@ input[type= "email"]{
     width: 178px;
 }
 
-/* Second fieldset that holds users desired grade level */
+/* ----- Second fieldset that holds users desired grade level. ----- */
 
 input[name= "contact-number"]{
     width: 126px;
 }
-
 .field__label--margin{
-    margin: 8.5px 8px;
+    margin: 8.5px 6px;
 }
 input[type= "radio"]:hover{
-    cursor:pointer;
+    cursor: pointer;
 }
 input[type= "radio"]:focus{
     outline: 2px solid #111111;
@@ -129,14 +128,14 @@ select{
     font-size: 11.5px;
 }
 
-/* Third fieldset that holds the authorization of collecting confidential data */
+/* ----- Third fieldset that holds the authorization of collecting confidential data. ----- */
 
 textarea:focus{
     background-color: #f4cc2821;
     border: 1.99px solid #040494;
 }
 textarea{
-    padding: 10px 10px;
+    padding: 10px;
     min-width: 200px;
     min-height: 65px;
     resize: vertical;
@@ -162,7 +161,7 @@ input[type= "checkbox"]{
     vertical-align: -20%;
 }
 
-/* Button to submit data */
+/* ----- Button to submit data. ----- */
 
 button[type= "submit"]:hover{
     cursor: pointer;
@@ -175,16 +174,75 @@ button[type= "submit"]:active{
 button[type= "submit"]{
     margin: 8.5px auto;
     width: 120px;
-    height: 25px;
+    height: 30px;
     vertical-align: center;
     border-radius: 3%;
     border: none;
     background-color: #cccccc;
+    color: #111111;
     font-family: "Roboto Serif", 'Times New Roman', serif;
     font-size: 13px;
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    
+
+@media only screen and (min-width: 481px){
+    body{
+        font-size: 13.5px;
+    }
+    .container{
+        padding: 20px;
+        width: 380px;
+    }
+    #header-logo{
+        width: 58px;
+        vertical-align: -47%;
+    }
+    #title{
+        font-size: 21px;
+    }
+    hr{
+        width: 370px;
+    }
+/* ------------------------------- */
+    input{
+        height: 17px;
+        font-size: 13.5px;
+    }
+    input[type= "text"]{
+        width: 200px;
+    }
+    input[name= "birthdate"]{
+        width: 145px;
+    }
+    input[type= "email"]{
+        width: 238px;
+    }
+/* ------------------------------- */
+    input[name="contact-number"]{
+        width: 176px;
+    }
+    .field__label--margin{
+        margin: 8.5px 15px;
+    }
+    select{
+        width: 203px;
+        height: 24px;
+        font-size: 13.5px;
+    }
+/* ------------------------------- */
+    textarea{
+        min-width: 275px;
+        min-height: 80px;
+        font-size: 13.5px;
+    }
+    .field__label--text-align{
+        margin: 8.5px 28px;
+    }
+/* ------------------------------- */
+    button[type= "submit"]{
+        width: 140px;
+        height: 40px;
+        font-size: 15px;
+    }
 }
 
 

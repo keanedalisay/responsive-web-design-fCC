@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang= "eng">
     <head>
         <title>ISAT-U Application Form</title> 
         <link href= "https://github.com/NyeverGator/web-design-fCC/blob/main/survey-form/ISAT-U.png?raw=true" rel= "shorcut icon"> 
@@ -15,7 +15,7 @@
 
                 <div class= "header">
                     <a href= "https://www.isatu.edu.ph/" title= "ISAT-U"><img id= "header-logo" src= "https://github.com/NyeverGator/web-design-fCC/blob/main/survey-form/ISAT-U.png?raw=true" alt= ""></a>
-                    <a href= "https://www.isatu.edu.ph/" title= "Interested on how this is coded?"><h1 id= "title"> Iloilo Science and <br> Technology University </h1></a>
+                    <a href= "https://github.com/NyeverGator/web-design-fCC/tree/main/survey-form" title= "Interested on how this is coded?"><h1 id= "title"> Iloilo Science and <br> Technology University </h1></a>
                 </div>
 
                 <form id= "survey-form" action="#">
@@ -34,11 +34,12 @@
                     <fieldset>
                         <label> Contact Num#: <input pattern= "[0-9+-]{3,30}" name= "contact-number" title= "Follow the format e.g. +63-929-555-7191" type= "text" placeholder= "+63-###-###-###" required></label>
                         <br>
-                        <label> Sex at Birth: </label>
+                        <label class= "field__label--margin"> Sex at Birth: </label>
                         <label class= "field__label--margin"><input name= "sex" value= "Male" type= "radio" required> Male </label>
                         <label class= "field__label--margin"><input name= "sex" value= "Female" type= "radio" required> Female </label>
                         <br>
                         <label> Desired Grade Level to Enroll: </label>
+                        <br>
                         <select name= "grade" id= "dropdown" title= "Select the right grade level." required>
                             <option value=""> --- Select Grade Level --- </option>
                             <option value="Grade 7"> Grade 7 </option>
@@ -50,6 +51,7 @@
                         </select>
                         <br>
                         <label> Desired Campus to Apply: </label>
+                        <br>
                         <select name= "campus" title= "Select the right campus to apply in." required>
                             <option value=""> --- Select Campus --- </option>
                             <option value="Iloilo Main"> Iloilo City Main Campus </option>
@@ -61,7 +63,8 @@
                     </fieldset>
                     <hr>
                     <fieldset>
-                        <label> Any suggestions? </label> 
+                        <label> Any suggestions? </label>
+                        <br>
                         <textarea name= "suggestions" placeholder= "Any suggestions to the way this application form is built?"></textarea>
                         <br>
                         <label class= "field__label--text-align"> I hereby declare that all information stated in this application is true and correct. Any dishonesty and misinformation shall make my admission to the University invalid. Likewise, I hereby authorize the University to collect, process, store and disclose my personal information as it may deem necessary for me and the University. </label>
