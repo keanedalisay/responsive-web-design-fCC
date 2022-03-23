@@ -116,6 +116,9 @@ select:focus{
     background-color: #f4cc2821;
     border-bottom: 1.99px solid #040494;
 }
+select:hover{
+    cursor: pointer;
+}
 select{
     margin: 8.5px 0px;
     width: 175px;
