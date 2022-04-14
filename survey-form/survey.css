@@ -1,9 +1,10 @@
-body{ /* ----- Webpage is designed to prioritize mobile-first. ----- */
+body{        /* ----- Webpage is designed to prioritize mobile-first. ----- */
     margin: 0px;    
     background: linear-gradient(90deg, #f4cc28 50%, #040494 50.1% 100%);
     font-family: "Roboto Serif","Times New Roman", serif;
     font-size: 11.5px;
 }
+
 /* ----- Parent div that holds ALL elements. ----- */
 
 .container{ 
