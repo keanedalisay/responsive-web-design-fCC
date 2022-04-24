@@ -15,9 +15,6 @@ section{
     width: max(80vw, 250px); 
     margin: 0px auto;
 }
-img{
-    object-fit: cover;
-}
 hr{
     width: max(85vw, 250px);
     height: 2px;
@@ -31,29 +28,30 @@ h1, h2{
 }
 p{
     margin: 0px;
+    text-align: justify;
     font-family: "Average", Verdana, sans-serif;
 }
 
-/* Section that contains main header
- */
+/* Section that contains main header */
 .header{
-    padding: 0px 50px 0px 50px;
-    padding-top: max(25vh, 75px);
-    padding-bottom: max(25vh, 75px);
+    padding: 0px 50px;
+    padding-top: max(15vw, 75px);
+    padding-bottom: max(15vw, 75px);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
 .header__img{
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px;
     margin-left: max(2vw, 10px);
     margin-right: max(2vw, 10px);
     width: max(18vw, 125px);
+    object-fit: cover;
     box-shadow: 2px 2px 10px #2e2d26;
 }
 .header__title-card{
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px;
     margin-left: max(3vw, 15px);
     margin-right: max(3vw, 15px);
 }
@@ -70,20 +68,80 @@ p{
 }
 .title-card__h2{
     margin-top: 20px;
-    font-size: min(4.5vw, 30px);
+    font-size: min(4.5vw, 28px);
     font-family: "Average", Times, serif;
 }
 
 /* Section that contains main information e.g. Biography */
 .info{
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0px;
     padding-left: max(10vw, 25px);
     padding-right: max(10vw, 25px);
 }
 .info__h2{
     font-size: min(6vw, 50px)
 }
+.info__h2--margin{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
 .info__p{
-    text-indent: 5px;
+    text-indent: 2px;
     font-size: min(4vw, 20px);
+}
+.info__p--margin{
+    margin-bottom: 25px;
+}
+.info__trib-card{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.trib-card{
+    margin: 25px 0px;
+    width: 100%;
+}
+.trib-card__p{
+    width: max(50%, 250px);
+    font-size: min(4vw, 18px);
+}
+.trib-card__img{
+    margin: 15px 0px 25px 0px;
+    width: max(20vw, 100px);
+    height: max(20vw, 100px);
+    object-fit: cover;
+    box-shadow: 2px 2px 10px #2e2d26;
+}
+
+/* Section that contains main footer */
+.footer{
+    padding: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.footer__link:hover{
+    background-color: #deb26f;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+.footer__link:active{
+    background-color: #deb26f;
+    box-shadow: 0px 0px 10px whitesmoke;
+}
+.link{
+    margin: 5px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+.footer__link{
+    background-color: whitesmoke;
+    color: #2e2d26;
+    text-decoration: none;
+    font-family: "IM FELL English SC", Times, serif;
+}
+.footer__p{
+    margin: 5px;
+    font-size: min(4.5vw, 20px);
 }
