@@ -103,11 +103,12 @@ p{
     width: 100%;
 }
 .trib-card__p{
+    margin: 10px;
     width: max(50%, 250px);
     font-size: min(4vw, 18px);
 }
 .trib-card__img{
-    margin: 15px 0px 25px 0px;
+    margin: 15px 10px 25px 10px;
     width: max(20vw, 100px);
     height: max(20vw, 100px);
     object-fit: cover;
