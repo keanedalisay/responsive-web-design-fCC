@@ -35,8 +35,8 @@ p{
 /* Section that contains main header */
 .header{
     padding: 0px 50px;
-    padding-top: max(15vw, 75px);
-    padding-bottom: max(15vw, 75px);
+    padding-top: max(25vh, 75px);
+    padding-bottom: max(25vh, 75px);
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -130,14 +130,24 @@ p{
     background-color: #deb26f;
     box-shadow: 0px 0px 10px whitesmoke;
 }
+.link-card{
+    display: inline-block;
+}
 .link{
     margin: 5px;
     padding: 5px 15px;
     border-radius: 5px;
 }
-.footer__link{
+.link--wiki, .link--film{
     background-color: whitesmoke;
     color: #2e2d26;
+}
+.link__img{
+    margin: 0px 5px 0px 0px;
+    width: 15px;
+    vertical-align: -12%;
+}
+.footer__link{
     text-decoration: none;
     font-family: "IM FELL English SC", Times, serif;
 }
