@@ -1,0 +1,54 @@
+
+/* Colors/Colours used on this webpage */
+:root{
+    --js-yellow:#f3e31b;
+    --js-black:#040404;
+    --code-card:#dedede;
+    --code-element:#03076b;
+    --code-name:#6b0303;
+    --code-value:#094a0b;
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: right;
+    align-items: center;
+}
+
+/* Navigation bar */
+.nav-bar{
+    width: 20%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    border: 1px solid black;
+}
+.nav-bar__img{
+    width: 100px;
+}
+.link-card{
+    width: 100%;
+}
+.link-card__link{
+    width: 100%;
+    display: block;
+}
+
+
+/* Main section */
+.body{
+    width: 80%;
+    border: 1px solid black;
+}
+.info-card{
+    width: 100%;
+}
