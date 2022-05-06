@@ -11,22 +11,22 @@
         <main>
             <div class="container">
                 <section class="nav-bar">
-                    <img class="nav-bar__img" src="JavaScript Icon.png" alt="">
+                    <img class="nav-bar__img" src="https://github.com/NyeverGator/web-design-fCC/blob/main/tech-doc-page/JavaScript%20Icon.png?raw=true" alt="">
                     <div class="link-card nav-bar__link-card">
-                        <a href="#" class="link-card__link">Introduction</a>
-                        <a href="#" class="link-card__link">Prerequisites</a>
-                        <a href="#" class="link-card__link">Variables</a>
-                        <a href="#" class="link-card__link">Scope</a>
-                        <a href="#" class="link-card__link">Constants</a>
-                        <a href="#" class="link-card__link">Data Types</a>
-                        <a href="#" class="link-card__link">If...Else</a>
-                        <a href="#" class="link-card__link">While</a>
-                        <a href="#" class="link-card__link">Functions</a>
+                        <a href="#introduction" class="link-card__a link-card__a--nav">Introduction</a>
+                        <a href="#prerequisites" class="link-card__a link-card__a--nav">Prerequisites</a>
+                        <a href="#variables" class="link-card__a link-card__a--nav">Variables</a>
+                        <a href="#scope" class="link-card__a link-card__a--nav">Scope</a>
+                        <a href="#constants" class="link-card__a link-card__a--nav">Constants</a>
+                        <a href="#data-types" class="link-card__a link-card__a--nav">Data Types</a>
+                        <a href="#if...else" class="link-card__a link-card__a--nav">If...Else</a>
+                        <a href="#while" class="link-card__a link-card__a--nav">While</a>
+                        <a href="#functions" class="link-card__a link-card__a--nav">Functions</a>
                     </div>
                 </section>
-                <section class="body">
-                    <div class="info-card body__info-card">
-                        <h1>Introduction to JavaScript</h1>
+                <section class="main-body">
+                    <div class="info-card main-body__info-card">
+                        <h1 id="introduction">Introduction to JavaScript</h1>
                         <p>JavaScript is a cross-platform, object-oriented scripting language. It is a small and lightweight language. Inside a host environment (for example, a web browser), JavaScript can be connected to the objects of its environment to provide programmatic control over them.</p>
                         <p>JavaScript contains a standard library of objects, such as Array, Date, and Math, and a core set of language elements such as operators, control structures, and statements. Core JavaScript can be extended for a variety of purposes by supplementing it with additional objects; for example:</p>
                         <ul>
@@ -34,8 +34,8 @@
                             <li>Server-side JavaScript extends the core language by supplying objects relevant to running JavaScript on a server. For example, server-side extensions allow an application to communicate with a database, provide continuity of information from one invocation to another of the application, or perform file manipulations on a server.</li>
                         </ul>
                     </div>
-                    <div class="info-card body__info-card">
-                        <h2>Prerequisites</h2>
+                    <div class="info-card main-body__info-card">
+                        <h2 id="prerequisites">Prerequisites</h2>
                         <p>This guide assumes you have the following basic background:</p>
                         <ul>
                             <li>A general understanding of the Internet and the World Wide Web (WWW).</li>
@@ -54,8 +54,8 @@
                         </div>
                         <p>Select the code in the pad and hit Ctrl+R to watch it unfold in your browser!</p>
                     </div>
-                    <div class="info-card body__info-card">
-                        <h2>Variables</h2>
+                    <div class="info-card main-body__info-card">
+                        <h2 id="variables">Variables</h2>
                         <p>You use variables as symbolic names for values in your application. The names of variables, called identifiers, conform to certain rules.</p>
                                                 <p>A JavaScript identifier must start with a letter, underscore (_), or dollar sign ($); subsequent characters can also be digits (0-9). Because JavaScript is case sensitive, letters include the characters "A" through "Z" (uppercase) and the characters "a" through "z" (lowercase).</p>
                                                 <p>You can use ISO 8859-1 or Unicode letters such as å and ü in identifiers. You can also use the Unicode escape sequences as characters in identifiers. Some examples of legal names are Number_hits, temp99, and _name.</p>
@@ -76,8 +76,8 @@
                             <p>let y = 13.</p>
                         </div>
                     </div>
-                    <div class="info-card body__info-card">
-                        <h2>Variable Scope</h2>
+                    <div class="info-card main-body__info-card">
+                        <h2 id="scope">Variable Scope</h2>
                         <p>When you declare a variable outside of any function, it is called a global variable, because it is available to any other code in the current document. When you declare a variable within a function, it is called a local variable, because it is available only within that function.</p>
                         <p>JavaScript before ECMAScript 2015 does not have block statement scope; rather, a variable declared within a block is local to the function (or global scope) that the block resides within. For example the following code will log 5, because the scope of x is the function (or global context) within which x is declared, not the block, which in this case is an if statement.</p>
                         <div class="code-card info-card__code-card">
@@ -92,8 +92,8 @@
                         <p>Global variables are in fact properties of the global object. In web pages the global object is window, so you can set and access global variables using the window.variable syntax.</p>
                         <p>Consequently, you can access global variables declared in one window or frame from another window or frame by specifying the window or frame name. For example, if a variable called phoneNumber is declared in a document, you can refer to this variable from an iframe as parent.phoneNumber.</p>
                     </div>
-                    <div class="info-card body__info-card">
-                        <h2>Constants</h2>
+                    <div class="info-card main-body__info-card">
+                        <h2 id="constants">Constants</h2>
                         <p>You can create a read-only, named constant with the const keyword. The syntax of a constant identifier is the same as for a variable identifier: it must start with a letter, underscore or dollar sign and can contain alphabetic, numeric, or underscore characters.</p>
                         <div class="code-card info-card__code-card">
                             <p>const PI = 3.14;</p>
@@ -109,8 +109,8 @@
                             <p>const MY_OBJECT = {"key": "value"}; <br> MY_OBJECT.key = "otherValue";</p>
                         </div>
                     </div>
-                    <div class="info-card body__info-card">
-                        <h2>Data Types</h2>
+                    <div class="info-card main-body__info-card">
+                        <h2 id="data-types">Data Types</h2>
                         <p>The latest ECMAScript standard defines seven data types:</p>
                         <ul>
                             <li>Six data types that are primitives:
@@ -127,8 +127,8 @@
                         </ul>
                         <p>Although these data types are a relatively small amount, they enable you to perform useful functions with your applications. Objects and functions are the other fundamental elements in the language. You can think of objects as named containers for values, and functions as procedures that your application can perform.</p>
                     </div>
-                    <div class="info-card body__info-card">
-                        <h2>If...Else Statement</h2>
+                    <div class="info-card main-body__info-card">
+                        <h2 id="if...else">If...Else Statement</h2>
                         <p>Use the if statement to execute a statement if a logical condition is true. Use the optional else clause to execute a statement if the condition is false. An if statement looks as follows:</p>
                         <div class="code-card info-card__code-card">
                             <p>if (condition) { <br> statement_1; <br> } else { <br> statement_2; <br> }</p>
@@ -151,8 +151,8 @@
                             <p>if ((x = y)) { <br> /* statements here */ <br> }</p>
                         </div>
                     </div>
-                    <div class="info-card body__info-card">
-                        <h2>While Statement</h2>
+                    <div class="info-card main-body__info-card">
+                        <h2 id="while">While Statement</h2>
                         <p>A while statement executes its statements as long as a specified condition evaluates to true. A while statement looks as follows:</p>
                         <div class="code-card info-card__code-card">
                             <p>while (condition) { <br> /* statements here */ <br> }</p>
@@ -172,8 +172,8 @@
                         </ul>
                         <p>After completing the third pass, the condition n < 3 is no longer true, so the loop terminates.</p>
                     </div>
-                    <div class="info-card body__info-card">
-                        <h2>Function Declarations</h2>
+                    <div class="info-card main-body__info-card">
+                        <h2 id="functions">Function Declarations</h2>
                         <p>A function definition (also called a function declaration, or function statement) consists of the function keyword, followed by:</p>
                         <ul>
                             <li>The name of the function.</li>
@@ -190,7 +190,7 @@
                         </div>
                         <p>Primitive parameters (such as a number) are passed to functions by value; the value is passed to the function, but if the function changes the value of the parameter, this change is not reflected globally or in the calling function.</p>
                     </div>
-                    <div class="info-card body__info-card">
+                    <div class="info-card main-body__info-card">
                         <h2>See Also</h2>
                         <ul>
                             <li><a href="#">A basic JavaScript guide by MDN</a></li>
