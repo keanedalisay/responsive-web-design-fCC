@@ -1,4 +1,72 @@
 
+/* Fonts that are to be used */
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('notosans-regular-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('notosans-medium-webfont.woff') format('woff');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('notosans-light-webfont.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('notosans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('notosans-italic-webfont.woff') format('woff');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Consolas';
+    src: url('consola.woff') format('woff');
+}
+@font-face {
+    font-family: 'Consolas';
+    src: url('consolab.woff') format('woff');
+    font-weight: bold;
+}
+@font-face{
+    font-family: 'Consolas';
+    src: url('consolai.woff') format('woff');
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Consolas';
+    src: url('consolaz.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Neutraface Text';
+    src: url('Neutraface-Text-Demi.woff') format('woff');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Neutraface Text';
+    src: url('Neutraface-Text-Light.woff') format('woff');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Neutraface Text';
+    src: url('Neutraface-Text-Book.woff') format('woff');
+}
+@font-face {
+    font-family: 'Neutraface Text';
+    src: url('Neutraface-Text-Bold.woff') format('woff');
+    font-weight: bold;
+}
+
 /* Colors/Colours used on this webpage */
 :root{
     --js-yellow:#f3e31b;
@@ -35,10 +103,11 @@ body{
     bottom: 0;
     left: 0;
     border-right: 2px solid var(--js-black, #040404);
+    background-color: white;
 }
 .nav-bar img{
     margin: 0px auto;
-    width: 80px;
+    width: max(50px, 7.5vw);
     display: block;
     object-fit: cover;
 }
@@ -52,7 +121,7 @@ body{
     background-color: var(--js-yellow, #f3e31b)
 }
 .nav-link{
-    padding: 10px;
+    padding: max(10px, 2vh);
     width: 100%;
     display: block;
     text-align: center;
@@ -60,7 +129,7 @@ body{
     color: var(--js-black, #040404);
     font-weight: bold;
     font-family: "Neutraface Text", Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: max(16px, 1.8vw);
 }
 
 /* Main body that contains content */
@@ -69,11 +138,13 @@ body{
     margin-bottom: 50px;
     width: 80%;
     float: right;
+    overflow-x: hidden;
+    background-color: white;
 }
 .info-card{
     padding: 0px 30px;
     width: 100%;
-    letter-spacing: 1px;
+    letter-spacing: 0.8px;
 }
 .info-card h1,  .info-card h2, .info-card h3{
     margin-top: 30px;
@@ -81,22 +152,27 @@ body{
     font-family: "Neutraface Text", Helvetica, sans-serif;
 }
 .info-card h3{
-    font-size: 30px;
+    font-size: max(20px, 3vw);
     font-weight: 400;
 }
 .info-card h2{
-    font-size: 35px;
+    font-size: max(25px, 3.8vw);
 }
 .info-card h1{
     margin-top: 10px;
-    font-size: 50px;
+    font-size: max(30px, 4.5vw);
 }
 .info-card p, .info-card ul{
-    font-size: 16px;
-    line-height: 24px;
+    font-size: max(16px, 1.2vw);
+    line-height: max(24px, 3vh);
 }
 .info-card li{
     margin: 18px 0px;
+}
+.info-card .id-link:hover::after{
+    content: "#";
+    text-decoration: underline 4px solid var(--js-yellow, #f3e31b);
+    color: #afafaf;
 }
 .info-card .id-link:hover{
     text-decoration: underline 4px solid var(--js-yellow, #f3e31b);
@@ -116,6 +192,7 @@ body{
     padding: 2px 5px;
     border-radius: 5px;
     background-color: var(--code-card, #ebebeb);
+    font-family: "Consolas", monospace;
 }
 .info-card .code-card{
     padding: 8px 25px;
@@ -138,4 +215,13 @@ body{
 }
 .web-link:hover{
     text-decoration: none;
+    color: var(--code-element, #0006b1);
+}
+.web-link:active{
+    color: var(--code-element, #0006b1);
+}
+
+
+@media (orientation: portrait) and (max-width: 700px){
+
 }
