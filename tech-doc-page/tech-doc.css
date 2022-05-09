@@ -108,7 +108,7 @@ body{
 .nav-bar img{
     margin: 0px auto;
     width: max(50px, 7.5vw);
-    display: block;
+    display: inline-block;
     object-fit: cover;
 }
 .nav-card{
@@ -129,7 +129,7 @@ body{
     color: var(--js-black, #040404);
     font-weight: bold;
     font-family: "Neutraface Text", Helvetica, sans-serif;
-    font-size: max(16px, 1.8vw);
+    font-size: max(16px, 1.2vw);
 }
 
 /* Main body that contains content */
@@ -163,7 +163,7 @@ body{
     font-size: max(30px, 4.5vw);
 }
 .info-card p, .info-card ul{
-    font-size: max(16px, 1.2vw);
+    font-size: max(15px, 1.2vw);
     line-height: max(24px, 3vh);
 }
 .info-card li{
@@ -222,6 +222,36 @@ body{
 }
 
 
-@media (orientation: portrait) and (max-width: 700px){
+@media (max-height: 450px), (orientation:portrait){
+    .nav-bar{
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        bottom: unset;
+        left: unset;
+        border-right: unset;
+        border-bottom: 2px solid var(--js-black, #040404);
+    }
+    .nav-card{
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .nav-bar img{
+        margin: auto max(25px, 7vw);
+    }
+    .nav-link{
+        margin: 0;
+        padding-top: max(35px, 2.2vh);
+        width: 125px;
+        height: 100%;
+        display: inline-block;
+    }
+
+    .main-body{
+        margin-top: 120px;
+        width: 100%;
+        float: unset;
+    }
 
 }
