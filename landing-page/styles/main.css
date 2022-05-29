@@ -1,0 +1,8 @@
+@import url(fonts.css);
+
+:root{
+    --main-yellow: #ffff01;
+    --main-orange: #f58220;
+    --main-black: #010004;
+    --main-white: #ffffff;
+}
