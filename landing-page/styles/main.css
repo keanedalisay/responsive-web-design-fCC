@@ -1,8 +1,22 @@
-@import url(fonts.css);
+@import url("https://github.com/NyeverGator/web-design-fCC/tree/main/landing-page/fonts");
 
 :root{
     --main-yellow: #ffff01;
     --main-orange: #f58220;
     --main-black: #010004;
     --main-white: #ffffff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+body, p, h1, h2{
+    margin: 0;
+}
+.container{
+    width: 100%;
 }
