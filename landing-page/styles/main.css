@@ -14,7 +14,7 @@
 html{
     scroll-behavior: smooth;
 }
-body, p, h1, h2{
+body, p, h1, h2, hr{
     margin: 0;
 }
 .container{
