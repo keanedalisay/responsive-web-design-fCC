@@ -10,13 +10,18 @@
 *{
     box-sizing: border-box;
 }
-
 html{
     scroll-behavior: smooth;
 }
-body, p, h1, h2, hr{
+body, p, h1, h2, ul, hr{
     margin: 0;
+    padding: 0;
 }
+ul{
+    list-style: none;
+}
+
+
 .container{
     width: 100%;
 }

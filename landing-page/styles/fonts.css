@@ -74,13 +74,13 @@
 }
 
 @font-face {
-    font-family: "Helvetica Condensed";
+    font-family: "Helvetica-CondensedBlack";
     src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/HelveticaCdBdObl.ttf?raw=true") format("ttf");
     font-weight: bold;
     font-style: oblique;
 }
 @font-face {
-    font-family: "Helvetica Condensed";
+    font-family: "Helvetica-CondensedBlack";
     src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/HelveticaCdBlk.ttf?raw=true") format("ttf");
     font-weight: 800;
     font-style: normal;
