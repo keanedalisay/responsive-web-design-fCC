@@ -13,7 +13,7 @@
                 <header>
                     <div class="logo-card">
                         <img src="img/albertos-pizza-logo.png" alt="Official logo of Alberto's Pizza">
-                        <a href="#" title="Order">
+                        <a href="#">
                             <svg width="25px" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 797.000000 796.000000" preserveAspectRatio="xMidYMid meet">
                                 <g transform="translate(0.000000,796.000000) scale(0.100000,-0.100000)"
                                 fill="#010004" stroke="none">
@@ -41,20 +41,18 @@
                             </svg>
                         </a>
                     </div>
-                    <nav class="nav-card">
-                        <ul>
-                            <li><a href="#">PRODUCTS</a></li>
-                            <li><a href="#">EXTRAS</a></li>
-                            <li><a href="#">MENU</a></li>
-                        </ul>
-                    </nav>
+                    <ul class="nav-card">
+                        <li><a href="#items">FEATURED ITEMS</a></li>
+                        <li><a href="#extras">EXTRA SIDES</a></li>
+                        <li><a href="#menu">OUR MENU</a></li>
+                    </ul>
                 </header>
                 <main>
                     <div class="banner-card">
                         <img src="img/albertos-tag-line.png" alt="">
                     </div>
                     <section class="content-card">
-                        <h1>FEATURED ITEMS</h1>
+                        <h1 id="items">FEATURED ITEMS</h1>
                         <hr class="item-hr">
                         <div class="item-card">
                             <img width="100px" src="img/albertos-pepperoni.jpg" alt="Pepperoni Pizza">
@@ -63,12 +61,22 @@
                                 <h2>ALL PEPPERONI</h2>
                                 <hr>
                                 <p>Pork pepperoni with hot sauce</p>
-                                <button type="submit">ORDER</button>
+                                <a href="#">ORDER</a>
+                            </div>
+                        </div>
+                        <div class="item-card">
+                            <img width="100px" src="img/albertos-hawaiian.jpg" alt="Pepperoni Pizza">
+                            <div class="label-card">
+                                <hr>
+                                <h2>HAWAIIAN</h2>
+                                <hr>
+                                <p>Ham, bacon, pineapple tidbits, mushroom, onions, and green bell pepper</p>
+                                <a href="#">ORDER</a>
                             </div>
                         </div>
                     </section>
                     <section class="content-card">
-                        <h1>WE ALSO SERVE</h1>
+                        <h1 id="extras">EXTRA SIDES</h1>
                         <hr class="extra-hr">
                         <div class="extra-card">
                             <img width="100px" src="img/albertos-fruit-shake.png" alt="Fruit Shakes ₱40, w/ ice cream ₱50">
@@ -76,7 +84,7 @@
                         </div>
                     </section>
                     <section class="content-card">
-                        <h1>OUR MENU</h1>
+                        <h1 id="menu">OUR MENU</h1>
                         <hr class="menu-hr">
                         <div class="menu-card">
                             <img width="100px" src="img/albertos-menu.png" alt="An image of the Alberto's Pizza Menu">
@@ -86,23 +94,23 @@
                 <footer>
                     <div class="footer-card">
                         <h2>JOIN OUR NEWSLETTER</h2>
-                        <hr>
+                        <hr class="news-hr">
                         <p>Receive product news and updates in your inbox</p>
                         <form action="https://www.freecodecamp.com/email-submit">
-                            <input type="email" placeholder="Type in your active email address">
+                            <input type="email" name="user-email" placeholder="Type in your active email address" required>
                             <button type="submit">SUBMIT</button>
                         </form>
                     </div>
                     <div class="footer-card">
                         <h2>CONNECT WITH US</h2>
-                        <hr>
+                        <hr class="connect-hr">
                         <div class="link-card">
                             <a href="https://www.facebook.com/albertospizza">
                                 <svg width="25px" version="1.0" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 1200.000000 1200.000000"
                                 preserveAspectRatio="xMidYMid meet">
                                     <g transform="translate(0.000000,1200.000000) scale(0.100000,-0.100000)"
-                                    fill="#010004" stroke="none">
+                                    fill="#FFFFFF" stroke="none">
                                     <path d="M5640 11989 c-1663 -103 -3190 -876 -4253 -2153 -1315 -1578 -1728
                                     -3726 -1095 -5685 699 -2163 2576 -3752 4823 -4085 1376 -204 2790 77 3970
                                     787 1240 747 2176 1922 2620 3287 637 1963 225 4115 -1092 5696 -933 1120
@@ -123,7 +131,7 @@
                             viewBox="0 0 320.000000 320.000000"
                             preserveAspectRatio="xMidYMid meet">
                                 <g transform="translate(0.000000,320.000000) scale(0.100000,-0.100000)"
-                                fill="#010004" stroke="none">
+                                fill="#FFFFFF" stroke="none">
                                 <path d="M1416 3130 c-242 -30 -482 -122 -691 -263 -118 -80 -312 -274 -392
                                 -392 -118 -176 -199 -366 -245 -578 -32 -148 -32 -446 0 -594 68 -317 202
                                 -564 427 -788 224 -225 471 -359 788 -427 148 -32 446 -32 594 0 317 68 564
@@ -144,7 +152,7 @@
                             viewBox="0 0 600.000000 600.000000"
                             preserveAspectRatio="xMidYMid meet">
                                 <g transform="translate(0.000000,600.000000) scale(0.100000,-0.100000)"
-                                fill="#010004" stroke="none">
+                                fill="#FFFFFF" stroke="none">
                                 <path d="M0 3000 l0 -3000 3000 0 3000 0 0 3000 0 3000 -3000 0 -3000 0 0
                                 -3000z m3902 1972 c72 -29 158 -106 189 -169 l24 -48 0 -1755 0 -1755 -24 -48
                                 c-31 -63 -117 -140 -189 -169 l-57 -23 -845 0 -845 0 -57 23 c-72 29 -158 106
