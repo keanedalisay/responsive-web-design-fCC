@@ -1,87 +1,87 @@
 @font-face {
     font-family: arial;
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/arial.ttf") format("ttf");
+    src: url("../fonts/arial.ttf") format("ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: Arial;
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/arialbd.ttf?raw=true") format("ttf");
+    src: url("../fonts/arialbd.ttf") format("ttf");
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: Arial;
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/ariali.ttf?raw=true") format("ttf");
+    src: url("../fonts/ariali.ttf") format("ttf");
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: Arial;
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/arialbi.ttf?raw=true") format("ttf");
+    src: url("../fonts/arialbi.ttf") format("ttf");
     font-weight: bold;
     font-style: italic;
 }
 @font-face {
     font-family: Arial;
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/ariblk.ttf?raw=true") format("ttf");
+    src: url("../fonts/ariblk.ttf") format("ttf");
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Arial Narrow";
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/ARIALN.TTF?raw=true") format("ttf");
+    src: url("../fonts/ARIALN.TTF") format("ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: "Arial Narrow";
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/ARIALNB.TTF?raw=true") format("ttf");
+    src: url("../fonts/ARIALNB.TTF") format("ttf");
     font-weight: bold;
     font-style: normal;
 }
 @font-face {
     font-family: "Arial Narrow";
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/ARIALNI.TTF?raw=true") format("ttf");
+    src: url("../fonts/ARIALNI.TTF") format("ttf");
     font-weight: normal;
     font-style: italic;
 }
 @font-face {
     font-family: "Arial Narrow";
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/ARIALNBI.TTF?raw=true") format("ttf");
+    src: url("../fonts/ARIALNBI.TTF") format("ttf");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: Helvetica;
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/Helvetica.ttf?raw=true") format("ttf");
+    src: url("../fonts/Helvetica.ttf") format("ttf");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: Helvetica;
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/helvetica-light-587ebe5a59211.ttf?raw=true") format("ttf");
+    src: url("../fonts/helvetica-light-587ebe5a59211.ttf") format("ttf");
     font-weight: 300;
     font-style: normal;
 }
 @font-face {
     font-family: Helvetica;
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/Helvetica-Bold.ttf?raw=true") format("ttf");
+    src: url("../fonts/Helvetica-Bold.ttf") format("ttf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Helvetica-CondensedBlack";
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/HelveticaCdBdObl.ttf?raw=true") format("ttf");
+    src: url("../fonts/HelveticaCdBdObl.ttf") format("ttf");
     font-weight: bold;
     font-style: oblique;
 }
 @font-face {
     font-family: "Helvetica-CondensedBlack";
-    src: url("https://github.com/NyeverGator/web-design-fCC/blob/main/landing-page/fonts/HelveticaCdBlk.ttf?raw=true") format("ttf");
+    src: url("../fonts/HelveticaCdBlk.ttf") format("ttf");
     font-weight: 800;
     font-style: normal;
 }
