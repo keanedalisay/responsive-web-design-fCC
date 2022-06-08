@@ -1,0 +1,211 @@
+@media screen and (min-width: 450px){
+    .logo-card svg{
+        width: 35px;
+    }
+    .logo-card{
+        width: 250px;
+    }
+    .logo-card img{
+        width: 130px;
+    }
+    .nav-card li{
+        width: 150px;
+        height: 100%;
+    }
+    .nav-card a{
+        font-size: 17px;
+    }
+
+
+    .content-card h1{
+        font-size: 30px;
+    }
+    .content-card .item-hr, .content-card .extra-hr, .content-card .menu-hr{
+        margin-bottom: 30px;
+    }
+    .content-card .item-hr{
+        width: 250px;
+        height: 3px;
+    }
+    .content-card .extra-hr{
+        width: 190px;
+        height: 3px;
+    }
+    .content-card .menu-hr{
+        width: 160px;
+        height: 3px;
+    }
+    .content-card h1{
+        font-size: 30px;
+    }
+    .label-card hr{
+        height: 2px;
+    }
+    .label-card h2{
+        font-size: 20px;
+    }
+
+
+    footer h2, footer p, footer a{
+        font-size: 14px;
+    }
+    footer h2{
+        font-size: 25px;
+    }
+    footer .news-hr{
+        width: 250px;
+    }
+    footer .connect-hr{
+        width: 220px;
+    }
+    .link-card svg{
+        width: 30px;
+    }
+}
+
+
+@media screen and (min-width: 520px){
+    .link-card:last-of-type{
+        margin-top: 0;
+    }
+    .link-card:last-of-type svg{
+        vertical-align: 75%;
+    }
+}
+
+
+@media screen and (min-width: 620px){
+    .logo-card svg{
+        width: 35px;
+    }
+    .logo-card{
+        width: min(300px, 45vw);
+    }
+    .logo-card img{
+        width: 140px;
+    }
+    .nav-card{
+        width: min(700px, 62vw);
+    }
+    .nav-card li{
+        width: 180px;
+        height: 100%;
+    }
+
+
+    .content-card .item-card{
+        margin-bottom: 30px;
+        width: min(300px, 40vw);
+        height: 178px;
+    }
+    .content-card .item-hr{
+        width: 425px;
+        height: 4px;
+    }
+    .content-card .extra-hr{
+        width: 340px;
+        height: 4px;
+    }
+    .content-card .menu-hr{
+        width: 275px;
+        height: 4px;
+    }
+    .content-card .item-hr, .content-card .extra-hr, .content-card .menu-hr{
+        margin-bottom: 50px;
+    }
+    .content-card h1{
+        font-size: 45px;
+    }
+    .label-card hr{
+        height: 2px;
+    }
+    .label-card h2{
+        font-size: 20px;
+    }
+    .label-card p{
+        margin: 5px 0px;
+        font-size: 12px;
+    }
+
+
+
+    footer h2{
+        font-size: 30px;
+    }
+    footer .footer-container{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    footer .footer-card{
+        width: min(500px, 48%);
+    }
+    footer .footer-card:nth-of-type(1){
+        padding-bottom: none;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-card:nth-of-type(2){
+        padding-top: unset;
+    }
+    .footer-card button{
+        width: min(125px, 12vw);
+        height: 42px;
+        padding: 8px 12px;
+    }
+    .footer-card input{
+        width: min(250px, 25vw);
+        height: 42px;
+        padding: 8px 12px;
+    }
+    footer .news-hr{
+        width: 245px;
+    }
+}
+
+
+@media screen and (min-width: 680px){
+    .logo-card{
+        margin-left: min(45px, 10vw);
+    }
+
+
+    .content-card .extra-card{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .extra-card img{
+        width: 210px;
+        margin-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    footer .footer-card{
+        border-bottom: 4px solid var(--main-white);
+    }
+    .footer-card p:not(.link-card p){
+        margin-bottom: 40px;
+    }
+    footer .news-hr{
+        margin-bottom: 14px;
+        width: 300px;
+    }
+    footer .connect-hr{
+        width: 250px;
+    }
+}
+
+
+@media screen and (min-width: 1060px){
+    .content-card .item-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .content-card .item-card{
+        margin-bottom: 30px;
+        height: 155px;
+    }
+}
