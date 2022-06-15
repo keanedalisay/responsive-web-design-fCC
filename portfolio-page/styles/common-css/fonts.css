@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: local('☺︎'),
+        url('../../fonts/rubik-v20-latin-regular.woff') format('woff'),
+        url('../../fonts/rubik-v20-latin-regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    src: local('☺︎'),
+        url('../../fonts/rubik-v20-latin-500.woff') format('woff'),
+        url('../../fonts/rubik-v20-latin-500.ttf') format('ttf');
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    src: local('☺︎'),
+        url('../../fonts/rubik-v20-latin-600.woff') format('woff'),
+        url('../../fonts/rubik-v20-latin-600.ttf') format('ttf');
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: local('☺︎'),
+        url('../../fonts/rubik-v20-latin-700.ttf') format('woff'),
+        url('../../fonts/rubik-v20-latin-700.ttf') format('ttf');
+}
+@font-face {
+    font-family: "Rubik";
+    font-style: italic;
+    font-weight: 400;
+    src: local('☺︎'),
+        url('../../fonts/rubik-v20-latin-italic.woff') format('woff'),
+        url('../../fonts/rubik-v20-latin-italic.ttf') format('ttf');
+}
