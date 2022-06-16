@@ -16,4 +16,5 @@ header, main, footer{
 
 .container{
     max-width: 102.8rem;
+    padding: min(5vw, 3rem) min(10vw, 8rem);
 }
