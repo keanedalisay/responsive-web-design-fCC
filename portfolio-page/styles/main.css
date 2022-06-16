@@ -7,6 +7,9 @@
     width: 100%;
 }
 
+body{
+    font-family: 'Rubik', Helvetica, sans-serif;
+}
 header, main, footer{
     width: 100%;
 }
