@@ -12,7 +12,9 @@ body{
 }
 header, main, footer{
     width: 100%;
+    border: 1px solid black;
 }
+
 
 .container{
     max-width: 102.8rem;
