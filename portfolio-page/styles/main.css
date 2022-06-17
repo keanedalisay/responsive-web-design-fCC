@@ -31,4 +31,13 @@ header, main, footer{
 .nav-card > li{
     list-style: none;
 }
-
+.nav-link{
+    height: 8rem;
+    display: grid;
+    place-content: center;
+    color: var(--main-black);
+    text-decoration: none;
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-weight: 600;
+    border: 1px solid black;
+}
