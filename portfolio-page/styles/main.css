@@ -22,3 +22,9 @@ header, main, footer{
     padding: min(5vw, 3rem) min(5vw, 8rem);
     margin: 0 auto;
 }
+
+/* Header with navigation bar */
+.nav-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
