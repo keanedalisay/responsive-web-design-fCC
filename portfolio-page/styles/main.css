@@ -28,3 +28,7 @@ header, main, footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
+.nav-card > li{
+    list-style: none;
+}
+
