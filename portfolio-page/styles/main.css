@@ -67,7 +67,7 @@ header{
     place-content: center;
     color: var(--main-black);
     text-decoration: none;
-    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-size: clamp(1.2rem, 3vw, 2rem);
     font-weight: 600;
 }
 
@@ -82,4 +82,17 @@ header{
 .title-card > p{
     margin: clamp(1.5rem, 2vw, 2.5rem) 0;
     font-size: clamp(1.2rem, 3vw, 2rem);
+}
+.headline{
+    padding: clamp(3rem, 10vw, 5rem) clamp(1rem, 5vw, 5rem);
+    background-color: var(--main-yellow-back);
+    border-radius: 2rem;
+}
+.headline > hr{
+    margin-top: clamp(1rem, 5vw, 3rem);
+    width: 100%;
+    height: clamp(0.3rem, 3vw, 0.4rem);
+    background-color: var(--main-yellow);
+    border: none;
+    border-radius: 1rem;
 }
