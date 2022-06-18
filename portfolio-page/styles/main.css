@@ -24,9 +24,19 @@ header, main, footer{
 }
 
 /* Header with navigation bar */
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
 .nav-card{
+    margin: 0px auto;
+    max-width: 52.8rem;
     display: grid;
+    gap: 1vw;
     grid-template-columns: repeat(3, 1fr);
+    border: 1px solid black;
 }
 .nav-card > li{
     list-style: none;
@@ -37,7 +47,6 @@ header, main, footer{
     place-content: center;
     color: var(--main-black);
     text-decoration: none;
-    font-size: clamp(1.2rem, 2vw, 1.8rem);
+    font-size: clamp(1.2rem, 2vw, 2rem);
     font-weight: 600;
-    border: 1px solid black;
 }
