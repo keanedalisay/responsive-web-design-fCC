@@ -41,6 +41,28 @@ header{
 .nav-card > li{
     list-style: none;
 }
+.nav-card > li::before{
+    width: 100%;
+    height: 0.3rem;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 82%;
+    content: "";
+    background-color: var(--main-yellow);
+    border-radius: 1rem;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: 250ms ease-in-out;
+}
+.nav-card > li:hover::before{
+    transform: scale(1);
+    transform-origin: top;
+}
+.nav-card > li:active::before{
+    transform: scale(1);
+    transform-origin: top;
+}
 .nav-link{
     height: 8rem;
     display: grid;
