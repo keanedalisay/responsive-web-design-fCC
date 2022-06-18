@@ -28,7 +28,7 @@ header{
     width: 100%;
     position: sticky;
     top: 0;
-    background-color: white;
+    background-color: var(--main-white);
 }
 .nav-card{
     margin: 0px auto;
@@ -36,7 +36,6 @@ header{
     display: grid;
     gap: 1vw;
     grid-template-columns: repeat(3, 1fr);
-    border: 1px solid black;
 }
 .nav-card > li{
     list-style: none;
@@ -44,7 +43,6 @@ header{
 .nav-card > li::before{
     width: 100%;
     height: 0.3rem;
-    margin: auto;
     display: block;
     position: relative;
     top: 82%;
@@ -71,4 +69,17 @@ header{
     text-decoration: none;
     font-size: clamp(1.2rem, 2vw, 2rem);
     font-weight: 600;
+}
+
+/* Main with content */
+.title-card{
+    text-align: center;
+}
+.title-card > h1{
+    font-size: clamp(1.5rem, 8vw, 5rem);
+    font-weight: 700;
+}
+.title-card > p{
+    margin: clamp(1.5rem, 2vw, 2.5rem) 0;
+    font-size: clamp(1.2rem, 3vw, 2rem);
 }
