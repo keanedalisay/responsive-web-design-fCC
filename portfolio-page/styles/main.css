@@ -41,7 +41,8 @@ header{
     list-style: none;
 }
 .nav-card > li::before{
-    width: 100%;
+    margin: 0 auto;
+    width: min(80%, 13rem);
     height: 0.3rem;
     display: block;
     position: relative;
