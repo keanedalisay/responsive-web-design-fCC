@@ -95,4 +95,36 @@ header{
     background-color: var(--main-yellow);
     border: none;
     border-radius: 1rem;
+    animation: left-to-right 60s ease-in-out infinite;
+}
+
+@keyframes left-to-right {
+    0%{
+        margin-left: auto;
+    }
+    15%{
+        width: 0%;
+    }
+    30%{
+        background-color: var(--main-white);
+        margin-left: 0;
+        width: 100%;
+    }
+    31%{
+        margin-left: auto;
+    }
+    45%{
+        width: 0%;
+    }
+    60%{
+        background-color: var(--main-black);
+        margin-left: 0;
+        width: 100%;
+    }
+    61%{
+        margin-left: auto;
+    }
+    80%{
+        width: 0%;
+    }
 }
