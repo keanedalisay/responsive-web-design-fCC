@@ -107,7 +107,7 @@ section > div{
     margin-top: clamp(1rem, 5vw, 3rem);
     width: 100%;
     height: clamp(0.3rem, 3vw, 0.4rem);
-    background-color: var(--main-yellow);
+    background: var(--main-yellow);
     border: none;
     border-radius: 1rem;
     animation: left-to-right 60s ease-in-out infinite;
@@ -207,7 +207,7 @@ section > div{
         width: 0%;
     }
     30%{
-        background-color: var(--main-white);
+        background: linear-gradient(90deg, var(--main-black), var(--main-yellow));
         margin-left: 0;
         width: 100%;
     }
@@ -218,7 +218,7 @@ section > div{
         width: 0%;
     }
     60%{
-        background-color: var(--main-black);
+        background: linear-gradient(90deg, var(--main-yellow), var(--main-black));
         margin-left: 0;
         width: 100%;
     }
