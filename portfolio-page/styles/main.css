@@ -181,9 +181,10 @@ section > div{
     color: var(--main-black);
     text-decoration: none;
     font-size: clamp(1.2rem, 3vw, 1.5rem);
+    transition: 250ms ease-in-out;
 }
 .link:hover{
-    background-color: var(--main-yellow);
+    box-shadow: inset 0rem -6rem 1rem var(--main-yellow);
 }
 .link:active{
     background-color: var(--main-yellow);
