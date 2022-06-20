@@ -83,6 +83,8 @@ header{
     margin: clamp(1.5rem, 2vw, 2.5rem) 0;
     font-size: clamp(1.5rem, 3vw, 2rem);
 }
+
+/* Section with class about */
 .headline{
     padding: clamp(3rem, 10vw, 5rem) clamp(1rem, 5vw, 5rem);
     background-color: var(--main-yellow-back);
@@ -97,6 +99,8 @@ header{
     border-radius: 1rem;
     animation: left-to-right 60s ease-in-out infinite;
 }
+
+/* Section with class work */
 .content-card{
     display: grid;
     gap: clamp(3rem, 5vw, 15rem);
@@ -131,6 +135,8 @@ header{
     height: 20rem;
     object-fit: cover;
 }
+
+/* Section with class contact */
 
 @keyframes left-to-right {
     0%{
