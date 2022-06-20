@@ -112,6 +112,10 @@ section > div{
     border-radius: 1rem;
     animation: left-to-right 60s ease-in-out infinite;
 }
+.flag{
+    color: var(--flag-red);
+    animation: neon 20s ease-in-out infinite;   
+}
 
 /* Section with class work */
 .content-card{
@@ -228,5 +232,14 @@ section > div{
     }
     80%{
         width: 0%;
+    }
+}
+
+@keyframes neon {
+    25%{
+        color: var(--flag-blue);
+    }
+    75%{
+        color: var(--flag-gold);
     }
 }
