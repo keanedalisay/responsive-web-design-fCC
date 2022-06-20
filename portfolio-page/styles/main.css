@@ -29,6 +29,7 @@ header{
     position: sticky;
     top: 0;
     background-color: var(--main-white);
+    z-index: 999;
 }
 .nav-card{
     margin: 0px auto;
@@ -99,6 +100,7 @@ section > div{
 .headline{
     padding: clamp(3rem, 10vw, 5rem) clamp(1rem, 5vw, 5rem);
     background-color: var(--main-yellow-back);
+    box-shadow: 0rem 2rem 2.5rem 0 #DEDEDE;
     border-radius: 2rem;
 }
 .headline > hr{
@@ -115,15 +117,29 @@ section > div{
 .content-card{
     display: grid;
     gap: clamp(3rem, 5vw, 15rem);
-    grid-template-columns: repeat(auto-fit, clamp(20rem, 40vw, 30rem));
+    grid-template-columns: repeat(auto-fit, clamp(20rem, 30vw, 30rem));
     place-content: center;
 }
+.content-card > a{
+    color: var(--main-black);
+    text-decoration: none;
+}
 .project-card{
+    height: clamp(35rem, 50vw, 45rem);
     display: grid;
     padding: clamp(1rem, 3vw, 2rem) clamp(1rem, 3vw, 3rem);
     background-color: var(--main-yellow-back);
+    box-shadow: 0rem 2rem 2.5rem 0 #DEDEDE;
     border-radius: 1rem;
+    transform: scale(1);
     text-align: center;
+    transition: 200ms ease-in-out;
+}
+.project-card:hover{
+    box-shadow: 0rem 2rem 2.5rem 0 var(--main-yellow);
+}
+.project-card:active{
+    transform: scale(0.95);
 }
 .project-card > hr{
     width: 100%;
