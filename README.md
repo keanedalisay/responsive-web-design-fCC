@@ -12,6 +12,8 @@ Here is an outline from the oldest to most recent folders:
 * landing-page
 * portfolio-page
 
+You can also verify my certificate <a href="https://freecodecamp.org/certification/NyeverGator/responsive-web-design">here...</a>
+
 ## Why is the structure of each directory/folder different?
 
 I followed the layout of the RWD course. If the next set of exercises is about building a project website (a survey form or landing page), then I shall build it. For every project I built, I learned things along the way whether it is about making good commit messages, building better layouts using CSS Flexbox and Grid, or creating structured directories. 
