@@ -1,4 +1,9 @@
 # NyeverGator's fCC Responsive Web Design Projects
+
+<video width="100%" height="200px" autoplay muted>
+    <source src="preview-rwd-NyeverGator" type="video/mp4">
+</video>
+
 ## A directory/folder storing the projects I built for completing the Responsive Web Design (RWD) course on freeCodeCamp.
 
 This directory/folder is for me (NyeverGator) to showcase the code I built when completing each and every project for the Responsive Web Design (RWD) course. Each project (named in every folder) will have different folder structures depending on the date it was last committed. 
